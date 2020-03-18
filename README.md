@@ -30,4 +30,18 @@ application.
 Feel free to post questions in the comment section of the [accompanying guide](https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71)
 
 ## License
-All code in this repository is licensed under the terms of the `MIT License`. For further information please refer to the `LICENSE` file.
+All code in this repository is licensed under the terms of the `MIT License`. For further information please refer to the `LICENSE` file. 
+
+## ADDENDUM FRANCISCO HUMERES M.
+
+# TEST SCRIPTS
+
+1. cd test_scripts
+
+* Test bash script calling other script with parameters, multihost config ("domains" parameter delimited by ";"):
+
+´´´./test_bash.sh -d "domain.1.com;domain.2.com;domain.3.com" -p "../data/certbot" -e "mimail@mail.com"´´´
+
+* Test multihost config.
+
+´´´./test_multihost_init-letsencrypt.sh -d "domain.1.com;domain.2.com;domain.3.com" -p "../data/certbot" -e "mimail@mail.com"´´´
