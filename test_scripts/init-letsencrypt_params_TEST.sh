@@ -4,7 +4,7 @@
 # script para generar certificados letsencrypt (certbot)--->https://github.com/wmnnd/nginx-certbot
 #
 
-while getopts d:p:e: option
+while getopts d:p:e:m option
 do 
  case "${option}" 
  in 
@@ -21,10 +21,10 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-#domains=(test.cl)
+#domains=(staging.kibana.wenuwork.cl)
 rsa_key_size=4096
 #data_path="../data/certbot"
-#email="francisco@test.com" # Adding a valid address is strongly recommended
+#email="francisco@gmail.com" # Adding a valid address is strongly recommended
 #staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
 if [ -d "$data_path" ]; then
